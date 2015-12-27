@@ -93,4 +93,5 @@ run_analysis <- function(...){
   for(i in 1:29) Activity_name <- c(Activity_name, Activity)
   tidy_data <- cbind(Subject_name, Activity_name, group_tbl)
   write.csv(tidy_data, "tidy_data.csv")
+  write.table(tidy_data, "tidy_data.txt", row.name=FALSE)
   }
